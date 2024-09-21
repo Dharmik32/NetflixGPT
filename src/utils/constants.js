@@ -12,7 +12,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZDEzYTgxYWQ2YzFlZDMxM2E4YzBmOTAxYzVjODM1ZiIsIm5iZiI6MTcyNjMxNzIwMi4yMDA1NTYsInN1YiI6IjYzMjU1NzFkMjI2YzU2MDA3Zjc1MjgzZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.yuAGSGNhHVCwCg_S9syTMzmM9JkScD2v6b0QkYOG1wo",
+      "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -23,3 +23,8 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+
+export const OPENAI_KEY = "dummy";
+
+export const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
